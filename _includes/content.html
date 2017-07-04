@@ -8,8 +8,9 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;)"></iframe>
 
     <form id="form-content" name="" action="https://docs.google.com/forms/d/e/1FAIpQLSddShhkUEoRk1PUhvLnL6DETZSMEDyOpvl-0faYYCZz6xGNfA/formResponse" class="form-content clearfix" target="hidden_iframe" method="POST">
-        <div class="form-item radio clearfix">
-            <span class="form-header">Title:</span>
+        <div class="form-item radio clearfix col-md-12">
+            <h2 class="form-header">PERSONAL INFORMATION</h2>
+            <span class="content-title stylized-header">Title</span>
             <label class="radio-inline">
                 <input class="radioTitle" type="radio" name="titleRadio" value="Prof" required>Prof.
             </label>
@@ -68,7 +69,8 @@
             <input class="content-input form-control" name="entry.282932038" id="entry.282932038" autocomplete="off" required type="text" value="" aria-required="true" aria-invalid="false">
         </div>
 
-        <div class="form-item registration clearfix">
+        <div class="form-item registration clearfix col-md-12">
+            <h2 class="form-header">REGISTRATION CATEGORY</h2>
             <label class="radio-inline">
                 <input class="radioRegistration" type="radio" name="registrationRadio" value="Member" required>Member at PHP 10,000.00
             </label>
@@ -78,12 +80,15 @@
             <input class="hidden radioListValue" name="entry.387386757" id="entry.387386757" value="">
         </div>
 
-        <div class="form-item clearfix col-md-6">
-            <span class="content-title stylized-header">Payment Declaration</span>
-            <input class="content-input form-control" name="entry.2108846572" id="entry.2108846572" autocomplete="off" required type="text" value="" aria-required="true" aria-invalid="false">
+        <div class="form-item  clearfix col-md-6">
+            <h2 class="form-header stylized-header">PAYMENT DECLARATION</h2>
+            <p class="form-description">I hereby agree to be bound by the rules and regulations of the Conference and would like to settle the payment of</p>
+            <input class="content-input declaration form-control" placeholder="Amount to be pay" name="entry.2108846572" id="entry.2108846572" autocomplete="off" required type="number" value="" aria-required="true" aria-invalid="false">
+            <span class="separator">by</span>
+            <input class="content-input declaration form-control" placeholder="" name="entry.2108846572" id="entry.2108846572" autocomplete="off" required type="date" value="" aria-required="true" aria-invalid="false">
         </div>
 
-        <div class="content-button-container">
+        <div class="content-button-container col-md-12">
             <button data-toggle="modal" type="submit" id="ss-submit" class="submit-button stylized-header">SUBMIT YOUR RESPONSE</button>
         </div>
     </form>
