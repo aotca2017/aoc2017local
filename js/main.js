@@ -26,3 +26,8 @@ $("#hidden_iframe").on('load',function () {
         $("#myModal").modal('hide');
     }, 2000);
 });
+
+$('.radioRegistration[name=registrationRadio]').on('click',function () {
+    console.log($(this).val());
+    $(".declaration").val(this.value);
+});
