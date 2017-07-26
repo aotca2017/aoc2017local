@@ -1,26 +1,73 @@
+.no-gutter
+  padding-left: 0
+  padding-right: 0
+
+.divider
+  float: left
+  width: 100%
+
+.form-control[disabled]
+  background-color: transparent
+
+@font-face
+  font-family: Gotham-Light
+  src: url('fonts/Gotham/Gotham-Light.otf')
+
+@font-face
+  font-family: Gotham-Bold
+  src: url('fonts/Gotham/Gotham-Bold.otf')
+
+@font-face
+  font-family: Gotham-Black
+  src: url('fonts/Gotham/Gotham-Black.otf')
+
+@font-face
+  font-family: Gotham-Medium
+  src: url('fonts/Gotham/Gotham-Medium.otf')
+
+.text-medium
+  font-family: "Gotham-Medium"
+
+
+
 body
   margin-top: 50px
   margin-bottom: 100px
+  font-family: "Gotham-Light"
+
+  .brand-logo-section
+    margin-bottom: 30px
+    .brand-logo
+      height: 170px
 
   .header-section
+    text-align: center
     .header-title
       margin-top: 0px
+      font-family: "Gotham-Medium"
     .header-address
       font-size: 18px
 
   .content-section
     margin-top: 30px
     .header-section
-      font-size: 24px
+      font-family: "Gotham-Medium"
+      font-size: 18px
       margin-top: 0
       margin-bottom: 5px
     .header-title
       display: block
       font-size: 16px
+    .header-text
+      display: block
+      text-align: center
     .header-deadline
       color: #B71C1C
       font-size: 18px
       margin-bottom: 30px
+      text-align: center
+      font-family: "Gotham-Medium"
+
 
     .form-item
       margin-top: 15px
@@ -62,6 +109,55 @@ body
         display: table
         margin-left: auto
         margin-right: auto
+
+  .bank-detail
+    float: left
+    margin-top: 15px
+    margin-bottom: 30px
+    .text-medium
+      margin-bottom: 15px
+    .table-content
+      margin-top: 15px
+      margin-bottom: 15px
+    .description
+      line-height: 24px
+
+
+  .terms-container
+    float: left
+    ol
+      li
+        margin-bottom: 5px
+
+
+.inputs--filled .content-label-animation
+  transform: translate(0, 0)
+
+.inputs--invalid
+  .content-input-animation
+    animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+    background: url('ico-invalid.svg') center right no-repeat
+    border-bottom: 2px solid #f37b56
+    box-shadow: none
+    transform: translate3d(0, 0, 0)
+
+
+
+@keyframes shake
+  0%, 100%
+    transform: translate3d(0, 0, 0)
+
+  33%
+    transform: translate3d(-6px, 0, 0)
+
+  66%
+    transform: translate3d(6px, 0, 0)
+
+
+.content-label-animation
+  display: inline-block
+  transform: translate(0, 1.25rem)
+  transition: 0.15s
 
 
 .modal.fade
