@@ -76,6 +76,7 @@ body
         font-size: 18px
       .content-title
         display: block
+
       .radio-inline
         margin-right: 15px
       .content-input
@@ -84,6 +85,7 @@ body
         border-left: none
         border-right: none
         box-shadow: none
+
       .declaration
         width: 30%
         display: inline-block
@@ -132,14 +134,19 @@ body
 
 .inputs--filled .content-label-animation
   transform: translate(0, 0)
+  color: #3498db
+
+
 
 .inputs--invalid
   .content-input-animation
     animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
     background: url('ico-invalid.svg') center right no-repeat
-    border-bottom: 2px solid #f37b56
+    border-bottom: 2px solid #3498db
     box-shadow: none
     transform: translate3d(0, 0, 0)
+  .content-label-animation
+    color: #3498db
 
 
 
@@ -158,6 +165,7 @@ body
   display: inline-block
   transform: translate(0, 1.25rem)
   transition: 0.15s
+  text-transform: uppercase
 
 
 .modal.fade
