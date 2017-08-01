@@ -19,13 +19,22 @@ $("#form-content").submit(function(){
     }, 1000);
 });
 
-$("#hidden_iframe").on('load',function () {
-    $("#myModal").modal('show');
-    $("#form-content")[0].reset();
+
+
+$("#form-content").on("submit",function(){
+    $("#ss-submit").attr("disabled", true);
     setTimeout(function(){
-        $("#myModal").modal('hide');
-    }, 2000);
+        $("#ss-submit").attr("disabled", false);
+    }, 1000);
+    $("#hidden_iframe").on('load',function () {
+        $("#myModal").modal('show');
+        $("#form-content")[0].reset();
+        setTimeout(function(){
+            $("#myModal").modal('hide');
+        }, 2000);
+    });
 });
+
 
 $('.radioRegistration[name=registrationRadio]').on('click',function () {
     console.log($(this).val());
