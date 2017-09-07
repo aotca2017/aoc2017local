@@ -6,6 +6,16 @@
   float: left
   width: 100%
 
+.close-button
+  z-index: 5
+  position: absolute
+  top: -16px
+  opacity: 1
+  right: -19px
+  outline: none
+  &:hover
+    opacity: 1
+
 .form-control[disabled]
   background-color: transparent
 
@@ -259,6 +269,16 @@ body
         .radio-inline
           margin-bottom: 5px
           margin-left: 0 !important
+
+  .modal-content
+    .text-alert
+      font-size: 24px
+
+  .modal-body
+    padding: 0
+  .close-button
+    top: -18px
+    right: -6px
 
 
 
